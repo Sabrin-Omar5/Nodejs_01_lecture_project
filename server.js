@@ -6,13 +6,14 @@ import studentRoute from "./routes/studentRoute.js"
 
 // Initialize Express
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 // Students
 app.use("/api/students", studentRoute)
+
 
 
 // Basic API
